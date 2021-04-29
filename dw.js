@@ -11,7 +11,11 @@ w1=new welcome;
 
 function cookie1(){
 
-document.cookie = "username=John Doe; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
+var d=new Date();
+var t=d.getTime();
+alert(t);
+
+document.cookie = "username=" +t+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
 alert(document.cookie);
 
 }
