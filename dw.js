@@ -15,8 +15,19 @@ var d=new Date();
 var t=d.getTime();
 alert(t);
 
-document.cookie = "username=" +t+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
 alert(document.cookie);
+
+if(document.cookie!=""){
+document.cookie = "username=" +t+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
+ }
+else{
+var str=document.cookie;
+var res = str.slice(9);
+var num=parseInt(res);
+if(t>=num+10000){
+alert("winner");
+  }
+ }
 
 }
 
