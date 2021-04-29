@@ -1,10 +1,10 @@
 function welcome(){
 var c=document.getElementById("container");
-var img=document.createElement("img");
-img.src="welcomedaniel.png";
-c.appendChild(img);
-img.style.height=screen.height;
-img.style.width=screen.width;
+this.img=document.createElement("img");
+this.img.src="welcomedaniel.png";
+c.appendChild(this.img);
+this.img.style.height=screen.height;
+this.img.style.width=screen.width;
 }
 
 w1=new welcome;
@@ -24,8 +24,8 @@ else{
 var str=document.cookie;
 var res = str.slice(9);
 var num=parseInt(res);
-if(t>=num+10000){
-alert("winner");
+if(t>=num+60000){
+w1.img="welcomedaniel2.png";
   }
  }
 
