@@ -31,4 +31,4 @@ w1.img="welcomedaniel2.png";
 
 }
 
-cookie1();
+//cookie1();
