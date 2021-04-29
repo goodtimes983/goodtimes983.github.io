@@ -17,7 +17,7 @@ alert(t);
 
 alert(document.cookie);
 
-if(document.cookie!=""){
+if(document.cookie==""){
 document.cookie = "username=" +t+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
  }
 else{
