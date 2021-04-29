@@ -15,7 +15,7 @@ var d=new Date();
 var t=d.getTime();
 alert(t);
 
-//document.cookie = "username=" +t+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
+document.cookie = "username=" +t+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
 alert(document.cookie);
 
 }
