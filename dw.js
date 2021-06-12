@@ -25,7 +25,7 @@ var str=document.cookie;
 var res = str.slice(9);
 var num=parseInt(res);
 if(t>=num+60000){
-w1.img.src="welcomedaniel2.png";
+w1.img.src="triangle.png";
   }
  }
 
