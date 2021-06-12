@@ -1,7 +1,7 @@
 function welcome(){
 var c=document.getElementById("container");
 this.img=document.createElement("img");
-this.img.src="welcomedaniel3.png";
+this.img.src="triangle.bmp";
 c.appendChild(this.img);
 this.img.style.height=screen.height;
 this.img.style.width=screen.width;
@@ -49,7 +49,7 @@ button1.style.background="green";
 c.appendChild(button1);
 button1.onclick=function(){
 
-cookie1();
+//cookie1();
 
 img.remove();
 button1.remove();
