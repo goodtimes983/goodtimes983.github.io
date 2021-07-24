@@ -94,7 +94,7 @@ button.style.display="none";
 function policy(){
 var img=document.createElement("img");
 img.src="policy.png";
-var c= document.getElementById("box");
+var c= document.getElementById("container");
 c.appendChild(img);
 img.width=screen.width*0.35;
 img.height=screen.height*0.25;
