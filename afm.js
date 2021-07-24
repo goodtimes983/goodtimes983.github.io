@@ -91,4 +91,37 @@ button.innerHTML=this.r;
 //button.style.display="none";
 }
 
+function policy(){
+var img=document.createElement("img");
+img.src="policy.png";
+var c= document.getElementById("box");
+c.appendChild(img);
+img.width=screen.width*0.35;
+img.height=screen.height*0.25;
+c.style.top=screen.height*0.75+"px";
+var button1=document.createElement("button");
+button1.innerHTML="Opt In";
+button1.style.fontSize="large";
+button1.style.background="green";
+c.appendChild(button1);
+button1.onclick=function(){
 
+//cookie1();
+
+img.remove();
+button1.remove();
+button2.remove();
+ }
+var button2=document.createElement("button");
+button2.innerHTML="Opt Out";
+button2.style.fontSize="large";
+button2.style.background="red";
+c.appendChild(button2);
+button2.onclick=function(){
+img.remove();
+button1.remove();
+button2.remove();
+ }
+}
+
+policy();
