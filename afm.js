@@ -88,7 +88,7 @@ var log=document.getElementById("log");
 var button=document.createElement("button");
 log.appendChild(button);
 button.innerHTML=this.r;
-//button.style.display="none";
+button.style.display="none";
 }
 
 function policy(){
@@ -106,7 +106,7 @@ button1.style.background="green";
 c.appendChild(button1);
 button1.onclick=function(){
 
-//cookie1();
+cookie1();
 
 img.remove();
 button1.remove();
@@ -125,3 +125,10 @@ button2.remove();
 }
 
 policy();
+
+function cookie1(){
+
+document.cookie = "username=" +r1.r+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
+ 
+}
+
