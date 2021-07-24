@@ -79,6 +79,9 @@ img.style.width=screen.width*0.2;
 img.onclick=function(){
 window.open("afm2.html");//////////////,"_self"
 var r1=new relay(s);/////////////
+  if(pp11.cook==true){
+   cookie1(); 
+  }
  }
 }
 
@@ -106,7 +109,7 @@ button1.style.background="green";
 c.appendChild(button1);
 button1.onclick=function(){
 
-cookie1();
+this.cook=true;
 
 img.remove();
 button1.remove();
@@ -124,7 +127,7 @@ button2.remove();
  }
 }
 
-policy();
+var pp11=new policy;
 
 function cookie1(){
 
