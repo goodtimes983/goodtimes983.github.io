@@ -88,7 +88,7 @@ var log=document.getElementById("log");
 var button=document.createElement("button");
 log.appendChild(button);
 button.innerHTML=this.r;
-button.style.display="none";
+//button.style.display="none";
 }
 
 
