@@ -9,9 +9,11 @@ w1=new welcome();
 
 function artists(s,a){
 
-s = document.cookie;
-s.replace("try_", "");
-  
+s2=document.cookie;
+  if(s2.includes(s)){
+    
+  }
+  else{return;}
 
 
 var box=document.getElementById("box");
