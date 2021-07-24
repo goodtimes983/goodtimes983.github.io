@@ -9,9 +9,9 @@ w1=new welcome();
 
 function artists(s,a){
 
-a=window.opener.document.getElementById("log").firstChild.innerHTML;
+s=window.opener.document.getElementById("log").firstChild.innerHTML;
 window.opener.close();
-alert(a);//maybe instead of (s)...(a)?
+alert(s);//maybe instead of (s)...(a)?
 
 var box=document.getElementById("box");
 box.style.top=100+"px";
