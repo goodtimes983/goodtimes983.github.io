@@ -10,7 +10,7 @@ w1=new welcome();
 function artists(s,a){
 
 s=window.opener.document.getElementById("log").firstChild.innerHTML;
-window.opener.close();
+//window.opener.close();
 alert(s);//maybe instead of (s)...(a)?
 
 var box=document.getElementById("box");
