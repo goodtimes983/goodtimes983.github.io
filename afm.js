@@ -98,7 +98,7 @@ var c= document.getElementById("container");
 c.appendChild(img);
 img.width=screen.width*0.35;
 img.height=screen.height*0.25;
-c.style.top=screen.height*0.75+"px";
+//c.style.top=screen.height*0.75+"px";
 var button1=document.createElement("button");
 button1.innerHTML="Opt In";
 button1.style.fontSize="large";
