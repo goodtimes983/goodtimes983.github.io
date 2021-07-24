@@ -9,9 +9,10 @@ w1=new welcome();
 
 function artists(s,a){
 
-s=window.opener.document.getElementById("log").firstChild.innerHTML;
-//window.opener.close();
-alert(s);//maybe instead of (s)...(a)?
+s = document.cookie;
+s.replace("try_", "");
+  
+
 
 var box=document.getElementById("box");
 box.style.top=100+"px";
