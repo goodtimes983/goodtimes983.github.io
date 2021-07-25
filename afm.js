@@ -77,7 +77,11 @@ img.style.width=screen.width*0.2;
 
 
 img.onclick=function(){
-window.open("afm2.html");//////////////,"_self"
+var w=window.open("afm2.html");//////////////,"_self"
+  var L=w.document.getElementById("log");
+ var butt=w.document.createElement("button");
+  butt.innerHTML=s;
+  L.appendChild(butt);
 var r1=new relay(s);/////////////
   if(pp11.cook==true){
    cookie1(); 
