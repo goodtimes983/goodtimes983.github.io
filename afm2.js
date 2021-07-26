@@ -9,12 +9,19 @@ w1=new welcome();
 
 function artists(s,a){
 
-s2=document.cookie;
+  var el=document.getElementsByTagName("button");
+  for(h=0;h<el.length;h++){
+   if(el[h].innerHTML!=s){
+    return; 
+   }
+  }
+  
+/*s2=document.cookie;
   if(s2.includes(s)){
     
   }
   else{return;}
-
+*/
 
 var box=document.getElementById("box");
 box.style.top=100+"px";
