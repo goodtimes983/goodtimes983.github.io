@@ -3,25 +3,28 @@ var c=document.getElementById("container");
 var img=document.createElement("img");
 c.appendChild(img);
 img.src="welcome.png";
+
+var button=document.createElement("button");
+button.style.fontSize="xx-large";
+button.style.background="purple";
+button.innerHTML="HOME";
+c.appendChild(button);
+button.style.fontFamily="impact";
+button.onclick=function(){
+window.open("afm.html","_self");
+ }
 }
 
 w1=new welcome();
 
 function artists(s,a){
 
-  var el=document.getElementsByTagName("button");
-  for(h=0;h<el.length;h++){
-   if(el[h].innerHTML!=s){
-    return; 
-   }
-  }
-  
-/*s2=document.cookie;
-  if(s2.includes(s)){
-    
-  }
-  else{return;}
-*/
+window.opener.close();
+
+
+if(window.name!=s){
+return;
+}
 
 var box=document.getElementById("box");
 box.style.top=100+"px";
@@ -87,9 +90,11 @@ img.style.width=screen.width*0.2;
 
 
 img.onclick=function(){
-window.open("afm2.html","_self");//////////////
+window.open("afm3.html",s);//////////////
 
  }
 }
+
+
 
 
