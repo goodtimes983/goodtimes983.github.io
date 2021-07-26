@@ -68,8 +68,8 @@ this.button.style.background="LimeGreen";
 this.button.style.fontFamily="impact";
 
 var img=document.createElement("img");
-//img.alt="default.png";/////////////
-img.src=s+".png";
+
+img.src=s+".png"; /////////////////makes sure that img has a associated band picture.
 this.button.appendChild(img);
 img.onerror=function(){img.src="default.png";}
 img.style.height=screen.height*0.2;
@@ -77,66 +77,11 @@ img.style.width=screen.width*0.2;
 
 
 img.onclick=function(){
-var w=window.open("afm2.html");//////////////,"_self"
-  var L=w.document.getElementById("log");
- var butt=w.document.createElement("button");
-  butt.innerHTML=s;
- // L.appendChild(butt);
-//var r1=new relay(s);/////////////
- // if(pp11.cook==true){
-  // cookie1(); 
-//  }
+
+var w=window.open("afm2.html",s);
+
  }
 }
 
-function relay(s){
-this.r=s
-var log=document.getElementById("log");
-var button=document.createElement("button");
-log.appendChild(button);
-button.innerHTML=this.r;
-button.style.display="none";
-}
-
-function policy(){
-var img=document.createElement("img");
-img.src="policy.png";
-var c= document.getElementById("container");
-c.appendChild(img);
-img.width=screen.width*0.35;
-img.height=screen.height*0.25;
-//c.style.top=screen.height*0.75+"px";
-var button1=document.createElement("button");
-button1.innerHTML="Opt In";
-button1.style.fontSize="large";
-button1.style.background="green";
-c.appendChild(button1);
-button1.onclick=function(){
-
-this.cook=true;
-
-img.remove();
-button1.remove();
-button2.remove();
- }
-var button2=document.createElement("button");
-button2.innerHTML="Opt Out";
-button2.style.fontSize="large";
-button2.style.background="red";
-c.appendChild(button2);
-button2.onclick=function(){
-img.remove();
-button1.remove();
-button2.remove();
- }
-}
-
-//var pp11=new policy;
-
-/*function cookie1(){
-
-document.cookie = "username=" +r1.r+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
- 
-}*/
 
 
