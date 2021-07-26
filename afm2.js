@@ -64,9 +64,6 @@ stringb=stringb+stringa.charAt(i);
 
 
 a1 = new artists("Jim","dung,chi,"); //  ***   All artist objects must start with the artist, and all albums in the parenthesis should end with a ","   ***
-a2 = new artists("GarFunk","poop,plow,");
-a3 = new artists("back-ave","fog,oops,");
-a4 = new artists("lit","pops,ok,");
 
 
 
