@@ -49,9 +49,7 @@ stringb=stringb+stringa.charAt(i);
 
 
 g1 = new genre("Rock","Jim,JimBerts,"); //  ***   All genre objects must start with the genre, and all artists in the parenthesis should end with a ","   ***
-g2 = new genre("Rap","GarFunk,Turksoncakes,");
-g3 = new genre("Hip Hop","back-ave,99 Celsius,");
-g4 = new genre("Techno", "lit,noliter,");
+
 
 
 
