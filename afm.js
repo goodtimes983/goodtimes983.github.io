@@ -81,11 +81,11 @@ var w=window.open("afm2.html");//////////////,"_self"
   var L=w.document.getElementById("log");
  var butt=w.document.createElement("button");
   butt.innerHTML=s;
-  L.appendChild(butt);
-var r1=new relay(s);/////////////
-  if(pp11.cook==true){
-   cookie1(); 
-  }
+ // L.appendChild(butt);
+//var r1=new relay(s);/////////////
+ // if(pp11.cook==true){
+  // cookie1(); 
+//  }
  }
 }
 
@@ -131,11 +131,12 @@ button2.remove();
  }
 }
 
-var pp11=new policy;
+//var pp11=new policy;
 
-function cookie1(){
+/*function cookie1(){
 
 document.cookie = "username=" +r1.r+"; expires=Thu, 18 Dec 2099 12:00:00 UTC; path=/";
  
-}
+}*/
+
 
