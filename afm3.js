@@ -64,9 +64,6 @@ stringb=stringb+stringa.charAt(i);
 
 
 a1 = new albums("dung","dodoodoo,lol,"); //  ***   All albums objects must start with the album, and all songs in the parenthesis should end with a ","   ***
-a2 = new albums("poop","lpi,ipi,");
-a3 = new albums("back-ave","dont suc,okfine,");
-a4 = new albums("pops","please?,");
 
 
 
