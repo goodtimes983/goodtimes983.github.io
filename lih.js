@@ -77,8 +77,7 @@ b.style.top=screen.height*0.5+"px";
 }
 
 written("Here at Long Island Homes, we have over 10 years of experience.");
-written("While some more well known brokerages may sell your home with a less experienced agent,");
-written("we offer the best local real estate brokers.");
+written("While some more well known brokerages may sell your home with a less experienced agent, we offer the best local real estate brokers.");
 written("Brokers require a higher level of real estate expertise.");
 written("Get a local broker to sell your home.");
 
