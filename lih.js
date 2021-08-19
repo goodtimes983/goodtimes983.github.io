@@ -73,6 +73,7 @@ write.style.width=screen.width+"px";
 var b=document.getElementById("box2");
 b.appendChild(write);
 b.style.top=screen.height*0.5+"px";
+
 }
 
 written("Here at Long Island Homes, we have over 10 years of experience.");
@@ -92,17 +93,18 @@ z.style.top=screen.height+"px";
 
 //zil1();
 
-function zil2(){
+function zil(){
+var box2=document.getElementById("box2");
+var box3=document.getElementById("box3");
 var z=document.getElementById("div2");
 z.style.zIndex="999";
 z.style.position="absolute";
-z.style.top=document.height+"px";
-
+//z.style.top=screen.height*2+"px";
+box2.appendChild(box3);
 }
 
-zil2();
+zil();
 
-// wow that worked well...too well...check zil1 and zil2 later if site bugs.
 
 
 //https://unsplash.com/photos/178j8tJrNlc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
