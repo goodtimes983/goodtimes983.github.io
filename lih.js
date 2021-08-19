@@ -96,7 +96,7 @@ function zil2(){
 var z=document.getElementById("div2");
 z.style.zIndex="999";
 z.style.position="absolute";
-z.style.top=screen.height+"px";
+z.style.top=document.height+"px";
 
 }
 
