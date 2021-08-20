@@ -6,9 +6,9 @@ var bd=b.cloneNode(true);
 c.appendChild(bd);
 var img=document.createElement("img");
 img.src="welcome.jpg";
-bd.appendChild(img);
-img.style.height=screen.height*0.50;
-img.style.width=screen.width*0.50;
+b.appendChild(img);
+img.style.height=427*screen.height*0.001+"px";
+img.style.width=640*screen.height*0.001+"px";
 
 var bod=document.getElementById("div1");
 var b3=document.createElement("p");
@@ -22,12 +22,17 @@ b3.style.top=0+"px";
 }
 
 
+
 welcome();
 
 
 function info(){
 var c=document.getElementById("container");
 var b=document.getElementById("box");
+
+//b.style.top=427*screen.height*0.001+"px";
+//b.style.left=640*screen.height*0.001+"px";
+
 var bd=b.cloneNode(true);
 c.appendChild(bd);
 
@@ -41,8 +46,8 @@ a.title="Email";
 a.href = "mailto:ziva.homes@gmail.com";
 
 //a.href="https://goodtimes983.github.io/";
-bd.appendChild(a);
-bd.style.left=screen.width*0.6+"px";
+b.appendChild(a);
+//bd.style.top=screen.height*0.6+"px";
 
 ////////////////////////////////
 
@@ -50,14 +55,15 @@ var bd2=b.cloneNode(true);
 c.appendChild(bd2);
 
 var a2=document.createElement("a");
-var linkText2 = document.createTextNode("Phone");
+var linkText2 = document.createTextNode("   Phone   ");
 a2.style.fontSize=screen.height*0.1+"px";
 a2.appendChild(linkText2);
 a2.title="Phone";
 a2.href="tel:5167847372";
-bd2.appendChild(a2);
-bd2.style.left=screen.width*0.6+"px";
-bd2.style.top=screen.height*2*0.1+"px";
+b.appendChild(a2);
+//bd2.style.left=2*a.style.width+"px";
+//bd2.style.left=screen.width*0.6+"px";
+//bd2.style.top=screen.height*2*0.1+"px";
 
 
 }
@@ -71,35 +77,41 @@ write.style.fontSize="x-large";
 write.innerHTML=s;
 write.style.width=screen.width+"px";
 var b=document.getElementById("box2");
-b.appendChild(write);
-b.style.top=screen.height*0.5+"px";
+var b2=document.getElementById("box");
+b2.appendChild(write);
+//b.style.top=screen.height*0.5+"px";
+b.style.top=b2.style.top;
 
 }
 
-//written("Here at Long Island Homes, we have over 10 years of experience.");
-//written("While some more well known brokerages may sell your home with a less experienced agent, we offer the best local real estate brokers.");
+written("Here at Long Island Homes, we have over 10 years of experience selling homes in our area.");
+written("Come see what our personal touch can do for you.");
+//written("While some more well known brokerages may sell your home with a less experienced agent,");
+//written("we offer the best local real estate brokers.");
 //written("Brokers require a higher level of real estate expertise.");
 //written("Get a local broker to sell your home.");
 
 
 
+
 //function zil1(){
-var z=document.getElementById("zillow-large-search-box-widget-container");
-z.style.zIndex="999";
-z.style.position="absolute";
-z.style.top=screen.height+"px";
+//var z=document.getElementById("zillow-large-search-box-widget-container");
+//z.style.zIndex="999";
+//z.style.position="absolute";
+//z.style.top=screen.height+"px";
 //}
 
 //zil1();
 
 function zil(){
+var box=document.getElementById("box")
 var box2=document.getElementById("box2");
 var box3=document.getElementById("box3");
 var z=document.getElementById("div2");
 z.style.zIndex="999";
 z.style.position="absolute";
 //z.style.top=screen.height*2+"px";
-box2.appendChild(box3);
+box.appendChild(box3);
 }
 
 zil();
