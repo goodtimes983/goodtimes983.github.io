@@ -59,7 +59,7 @@ var linkText2 = document.createTextNode("   Phone   ");
 a2.style.fontSize=screen.height*0.1+"px";
 a2.appendChild(linkText2);
 a2.title="Phone";
-a2.href="tel:5167847372";
+a2.href="tel:5167847366";
 b.appendChild(a2);
 //bd2.style.left=2*a.style.width+"px";
 //bd2.style.left=screen.width*0.6+"px";
@@ -119,3 +119,5 @@ zil();
 
 
 //https://unsplash.com/photos/178j8tJrNlc?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
+// fix comments as I only use only 1 box now.
+// maybe credit picture on a hover.
