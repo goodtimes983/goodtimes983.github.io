@@ -84,7 +84,7 @@ b.style.top=b2.style.top;
 
 }
 
-written("Here at Long Island Homes, we have over 10 years of experience selling homes in our area.");
+written("We have over 10 years of experience selling homes in our area.");
 written("Come see what our personal touch can do for you.");
 //written("While some more well known brokerages may sell your home with a less experienced agent,");
 //written("we offer the best local real estate brokers.");
