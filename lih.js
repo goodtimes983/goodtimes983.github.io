@@ -5,7 +5,7 @@ var b=document.getElementById("box");
 var bd=b.cloneNode(true);
 c.appendChild(bd);
 var img=document.createElement("img");
-img.src="welcome.jpg";
+img.src="welcome2.jpg";
 b.appendChild(img);
 img.style.height=427*screen.height*0.001+"px";
 img.style.width=640*screen.height*0.001+"px";
