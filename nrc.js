@@ -10,7 +10,8 @@ function mobile(){
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
  alert("This site is not yet available on a mobile device.");
  }
+else{welcome();}
 }
 
-welcome();
+
 mobile();
