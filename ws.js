@@ -35,3 +35,9 @@ var si=setInterval(function(){but.innerHTML=n;n=n-1;if(n==-2){clearInterval(si);
 }
 
 stopwatch101();
+
+document.onkeydown = function (e) {
+        return false;
+}
+
+document.addEventListener('contextmenu', event => event.preventDefault());
