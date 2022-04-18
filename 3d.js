@@ -1,5 +1,13 @@
+window.addEventListener("deviceorientation", handleOrientation, true);
 
-
+function handleOrientation(event) {
+  var absolute = event.absolute;
+  var alpha    = event.alpha;
+  var beta     = event.beta;
+  var gamma    = event.gamma;
+//alert(gamma);
+  // Do stuff with the new orientation data
+}
 
 var c=document.getElementById("container");
 var video = document.createElement('video');
@@ -62,8 +70,8 @@ var lat=Math.abs(position.coords.latitude)-40.7154518;
 var long=Math.abs(position.coords.longitude)-73.7919103;
 var displacement=Math.sqrt(Math.pow(long,2)+Math.pow(lat,2));
 //alert(displacement);
-img1.height=screen.height/(displacement+1);
-img1.width=screen.height/(displacement+1);
+img1.height=screen.height/((1000*displacement)+1);
+img1.width=screen.height/((1000*displacement)+1);
 }
 }
 //}
