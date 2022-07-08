@@ -1,47 +1,80 @@
 <html>
-<div id="div1">
-</div>
 <header>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<meta name="description" content="No Right Click">
-<meta name="keywords" content="No Right Click, pictures, pics, content, protected, copyright protected">
+<meta name="description" content="City Simulation Game">
+<meta name="keywords" content="city, game, city building, city simulation game">
 </header>
 <body>
-  <p>Click the button to share your location and enter the world.</p>
-
-<button onclick="getLocation()">Click Here</button>
-
-<p id="demo"></p>
 </body>
 <style>
 
 #container{
 position:relative;
-width: 600px;
-height: 400px;
-background: transparent;
+width: 992px;
+height: 1000px;
+background: red;
 }
 
 #log{
 position:fixed;
-width: 36px;
-height: 36px;
-background: transparent;
+width: 1px;
+height: 1px;
+background: clear;
 }
 
 #box{
 position:absolute;
-width: 20px;
-height: 20px;
+width: 1px;
+height: 1px;
+background: clear;
+}
+
+#box2{
+position:absolute;
+width: 1px;
+height: 1px;
+background: clear;
+}
+
+#box3{
+position:absolute;
+width: 1px;
+height: 1px;
+background: clear;
+}
+
+#box4{
+position:absolute;
+width: 1px;
+height: 1px;
+background: clear;
+}
+
+#box5{
+position:absolute;
+width: 1px;
+height: 1px;
+background: clear;
+}
+
+#box6{
+position:absolute;
+width: 1px;
+height: 1px;
 background: clear;
 }
 
 #table{
 position:absolute;
-width: 10px;
-height: 10px;
+width: 1px;
+height: 1px;
+background: clear;
+}
+
+#log2{
+position:fixed;
+width: 1px;
+height: 1px;
 background: clear;
 }
 
@@ -53,22 +86,26 @@ background: clear;
 <div id="container">
 <div id="box">
 </div>
+<div id="box2">
+</div>
+<div id="box3">
+</div>
+<div id="box4">
+</div>
+<div id="box5">
+</div>
+<div id="box6">
+</div>
 <div id="table">
 </div>
 <div id="log">
 </div>
 </div>
+<div id="log2">
+</div>
 
 
-
-
-  <script>
-    alert(window.top.location.href);
-  </script>
-<script src= 3d.js>
+<script src= cs.js>
 </script>
-
-
-
 
 </html>
