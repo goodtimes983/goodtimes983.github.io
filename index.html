@@ -1,111 +1,41 @@
+<!DOCTYPE html>
 <html>
-<header>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="City Simulation Game">
-<meta name="keywords" content="city, game, city building, city simulation game">
-</header>
-<body>
-</body>
-<style>
-
-#container{
-position:relative;
-width: 99px;
-height: 100px;
-background: red;
-}
-
-#log{
-position:fixed;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-#box{
-position:absolute;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-#box2{
-position:absolute;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-#box3{
-position:absolute;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-#box4{
-position:absolute;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-#box5{
-position:absolute;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-#box6{
-position:absolute;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-#table{
-position:absolute;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-#log2{
-position:fixed;
-width: 1px;
-height: 1px;
-background: clear;
-}
-
-
-
-</style>
-
-
-<div id="container">
-<div id="box">
-</div>
-<div id="box2">
-</div>
-<div id="box3">
-</div>
-<div id="box4">
-</div>
-<div id="box5">
-</div>
-<div id="box6">
-</div>
-<div id="table">
-</div>
-<div id="log">
-</div>
-</div>
-<div id="log2">
-</div>
-
-
-<script src= ana.js>
-</script>
-
+  <head>
+    <title>SC2K</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html, body {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        overflow: hidden;
+        display: block;
+        background-color: #371700;
+      }
+      #interfaceCanvas,
+      #scaledInterfaceCanvas,
+      #vectorCanvas,
+      #animationCanvas,
+      #primaryCanvas { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+    </style>
+    <script src="js/game.js"></script>
+    <script src="js/graphics.js"></script>
+    <script src="js/ui.js"></script>
+    <script src="js/events.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/tiles.js"></script>
+    <script src="js/debug.js"></script>
+    <script src="js/import.js"></script>
+  </head>
+  <body onload="game.init();">
+    <canvas id="interfaceCanvas" style="z-index: 5;"></canvas>
+    <canvas id="scaledInterfaceCanvas" style="z-index: 4;"></canvas>
+    <canvas id="vectorCanvas" style="z-index: 3;"></canvas>
+    <canvas id="animationCanvas" style="z-index: 2;"></canvas>
+    <canvas id="primaryCanvas" style="z-index: 1;"></canvas>
+  </body>
 </html>

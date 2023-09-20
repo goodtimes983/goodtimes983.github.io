@@ -1,0 +1,14 @@
+.DS_Store
+.gitignore
+node_modules
+db/database.db-shm
+db/database.db-wal
+images/.DS_Store
+*/.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
